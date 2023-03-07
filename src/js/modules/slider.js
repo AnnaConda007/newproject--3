@@ -6,14 +6,12 @@ export default class Slider {
         this.slidIndex = 1
     }
     showSlides(n) {
-       if(n>this.slides.length){
-       this.slidIndex = 1
-       }
-  
-       if(n<1){
-        this.slidIndex = this.slides.length
-       }
-  
+        if(n>this.slides.length){
+            this.slidIndex = 1
+            }
+            if(n<1){
+             this.slidIndex = this.slides.length
+            }
        Array.from(this.slides).forEach(slide => {
             slide.style.display = "none"
         })
