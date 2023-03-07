@@ -14,7 +14,7 @@
       this.slidIndex = this.slides.length
      }
 
-      this.slides.forEach(slide => {
+     Array.from(this.slides).forEach(slide => {
           slide.style.display = "none"
       })
       this.slides[this.slidIndex - 1].style.display = "block" //? за счет чего значение slidIndex меняется при переключении слайдов?
