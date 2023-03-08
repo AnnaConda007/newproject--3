@@ -8,7 +8,9 @@ import videoPlayer from "./modules/playVideo";
 const showUpSlider = new MiniSlider({
   container:".showup__content-slider", 
   next:".showup__next",
-   prev:".showup__prev"
+   prev:".showup__prev",
+   activeClass:"card-active",
+   animate:true
 })
 showUpSlider.init()
 
