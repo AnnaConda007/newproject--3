@@ -8,15 +8,12 @@ export default class videoPlayer {
   bindTriggers() {
     this.btns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        const path = btn.getAttribute('data-url')
-        this.createPlayer(path)
-
-     /*   if (document.querySelector('iframe#frame')) {
+         if (document.querySelector('iframe#frame')) {
           this.overlay.style.display = 'flex'
         } else {
           const path = btn.getAttribute('data-url')
           this.createPlayer(path)
-        }*/
+        }
       })
     })
   }
@@ -43,7 +40,6 @@ export default class videoPlayer {
     tag.src = 'https://www.youtube.com/iframe_api'
     const firstScriptTag = document.getElementsByTagName('script')[0]
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
-
     this.bindTriggers()
     this.bindCloseBtn()
   }
