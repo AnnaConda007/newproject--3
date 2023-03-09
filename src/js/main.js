@@ -22,7 +22,7 @@ const modulesSlider = new MiniSlider({
    animate:true
 })
 modulesSlider.init()
-
+ 
 const feedSlider = new MiniSlider({
   container:".feed__slider", 
   next:".feed__slider .slick-next",
