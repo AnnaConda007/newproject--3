@@ -22,6 +22,13 @@ constructor(container,next, prev,activeClass,animate,autoplay){
 
 bindTrigers(){
     this.next.addEventListener("click",()=>{
+
+if(this.slides[1].tagName==="BUTTON" && this.slides[2].tagName==="BUTTON"){
+    this.container.appendChild(this.slides[0])
+    this.container.appendChild(this.slides[0]) 
+} else if(this.slides[1].tagName==="BUTTON"){
+    this.container.appendChild(this.slides[0]) 
+}
         this.container.appendChild(this.slides[0])
         this.decorizeSlides()
     })
