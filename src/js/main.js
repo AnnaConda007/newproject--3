@@ -17,14 +17,18 @@ showUpSlider.init()
 const modulesSlider = new MiniSlider({
   container:".modules__content-slider", 
   next:".modules__info-btns .slick-next",
-   prev:".modules__info-btns .slick-prev"
+   prev:".modules__info-btns .slick-prev",
+   activeClass:"card-active",
+   animate:true
 })
 modulesSlider.init()
 
 const feedSlider = new MiniSlider({
   container:".feed__slider", 
   next:".feed__slider .slick-next",
-   prev:".feed__slider .slick-prev"
+   prev:".feed__slider .slick-prev",
+   activeClass:"feed__item-active",
+
 })
 feedSlider.init()
   const player = new videoPlayer(".showup .play", ".overlay");
